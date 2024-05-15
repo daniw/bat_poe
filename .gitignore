@@ -11,3 +11,10 @@ Manufacturing
 *.PrjPCBStructure
 *.x_t
 *_loc
+
+
+# LT Spice
+*.log
+*.raw
+
+*.pdf
