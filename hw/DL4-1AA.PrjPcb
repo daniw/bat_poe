@@ -253,7 +253,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document13]
-DocumentPath=PCB\DL5-1AA.PcbDoc
+DocumentPath=PCB\DL4-1AA.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -270,7 +270,7 @@ GenerateClassCluster=0
 DocumentUniqueId=RLFURPUT
 
 [Document14]
-DocumentPath=DL5-1AA.OutJob
+DocumentPath=DL4-1AA.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -287,7 +287,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document15]
-DocumentPath=DL5-1AA.BomDoc
+DocumentPath=DL4-1AA.BomDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -332,7 +332,7 @@ Value=Bat_PoE
 
 [Parameter3]
 Name=PCB_NAME
-Value=DL5-1
+Value=DL4-1
 
 [Parameter4]
 Name=Layout_Designer
