@@ -18,7 +18,7 @@ RevisionNamingSchemeGUID=
 Name=DL4-1AA.OutJob
 Description=
 TargetOutputMedium=11 - PCB Manufacturing
-VariantName=WS2813E
+VariantName=DownloadStation
 VariantScope=1
 CurrentConfigurationName=
 TargetPrinter=Microsoft Print to PDF
@@ -406,7 +406,7 @@ Configuration14_Name6=VisibleOrder_Flat
 Configuration14_Item6=Comment=120|Designator=120|Footprint=100|Supplier Part Number 3=100
 
 [PublishSettings]
-OutputFilePath2=Manufacturing\01 - PCB Manufacturing\
+OutputFilePath2=C:\Daten\Temp\bat_poe\hw\Manufacturing\01 - PCB Manufacturing\
 ReleaseManaged2=0
 OutputBasePath2=Manufacturing\
 OutputPathMedia2=01 - PCB Manufacturing
@@ -474,7 +474,7 @@ OutputFileNameSpecial5=
 OpenOutput5=0
 
 [GeneratedFilesSettings]
-RelativeOutputPath2=Manufacturing\01 - PCB Manufacturing\
+RelativeOutputPath2=C:\Daten\Temp\bat_poe\hw\Manufacturing\01 - PCB Manufacturing\
 OpenOutputs2=0
 AddToProject2=0
 TimestampFolder2=0
