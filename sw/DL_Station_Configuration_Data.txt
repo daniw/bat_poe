@@ -1,0 +1,23 @@
+
+1. Add to boot config:            
+/boot/config.txt        
+    dtoverlay=gpio-shutdown,gpio_pin=26,active_low=1,gpio_pull=off
+    dtoverlay=gpio-poweroff,gpiopin=25,active_low=0
+
+2. Add to autostart
+    
+    sudo nano /etc/xdg/lxsession/LXDE-pi/autostart
+    
+    @lxpanel --profile LXDE-pi
+    @pcmanfm --desktop --profile LXDE-pi
+    
+    @xset s off
+    @xset -dpms
+    @xset s noblank
+    
+    @chromium-browser --kiosk https://google.com
+    # Change web address to correct webpage, you want to show.
+    @lxterminal -e refresh_chromium.sh
+    
+    @lxterminal --working-directory=/home/dlstation/dlstation/ -e ./start_python.sh
+
