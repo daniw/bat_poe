@@ -41,3 +41,24 @@ R_RT = e_series(57500/(f_sw/1000) *1000)
 
 R_uvlo_h=e_series((V_start*(V_en_dis/V_en_on)-V_stop)/(I_en_pup*(1-V_en_dis/V_en_on)+I_en_hys))
 R_uvlo_l= e_series(R_uvlo_h * V_en_dis/(V_stop-V_en_dis+R_uvlo_h*(I_en_hys+I_en_hys)))
+
+
+Vinmin = min(V_in);
+Rsense = 0.005;
+Cout = 20e-6;
+ESR = 1e-3;
+L = 8.2e-6;
+Rsh = 470e3;
+Rsl = 12e3;
+Gea= 1.1e-3;
+
+Adc = 3/40 * Vinmin/(2*Rsense*I_out_max)
+fpmod = 1/(2*pi*V_out/I_out_max * Cout);
+fzmod = 1/(2*pi*ESR*Cout);
+
+frhpz = V_out/(2*pi*L*I_out_max)*(Vinmin/V_out)^2;
+
+fco = min(frhpz/4,f_sw/5);
+R76 = 40/3*2*pi*Cout * Rsense*V_out * fco * (Rsh+Rsl)/(Rsl*Vinmin*Gea)
+C70 = 40/3*1/(2*pi*fco/10*R76)
+C69 = max(Cout*ESR/R76, 1/(20*pi * fco*R76))
